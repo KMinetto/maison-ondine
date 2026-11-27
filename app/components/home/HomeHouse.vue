@@ -14,7 +14,7 @@
                 <span class="house-subtitle overline" data-animate>La Maison</span>
                 <h2 class="house-title" data-animate>
                     Un atelier, huit paires de <br>
-                    mains, auxune <br>
+                    mains, aucune <br>
                     précipitation.
                 </h2>
             </div>
