@@ -43,7 +43,15 @@ onMounted(() => {
 }); 
 
 nuxtApp.hook('page:finish', () => {
-  $ScrollSmoother.get()?.scrollTop(0);
+  const smoother = $ScrollSmoother.get();
+  const target = route.hash ? document.getElementById(decodeURIComponent(route.hash.slice(1))) : null;
+
+  if (smoother) {
+    const headerHeight = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 0;
+    if (target) smoother.scrollTo(target, false, `top ${headerHeight + 24}px`);
+    else smoother.scrollTop(0)
+  }
+
   $ScrollTrigger.refresh();
 });
 </script>

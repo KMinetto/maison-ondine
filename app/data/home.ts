@@ -25,7 +25,7 @@ export const features: Feature[] = [
 export const cards: ServiceCardImageData[] = [
     {
         id: 1,
-        to: "/prestations/balayage-lumiere",
+        to: "/prestations#balayage-lumiere",
         src: "/images/cards/balayage.webp",
         alt: "Image d'une mise en place d'une couleur",
         service: "Couleur",
@@ -36,7 +36,7 @@ export const cards: ServiceCardImageData[] = [
     },
     {
         id: 2,
-        to: "/prestations/rituel-ondine",
+        to: "/prestations#rituel-ondine",
         src: "/images/cards/soin.webp",
         alt: "Image d'un soin",
         service: "Soin",
@@ -47,7 +47,7 @@ export const cards: ServiceCardImageData[] = [
     },
     {
         id: 3,
-        to: "/prestations/coupe-ondine",
+        to: "/prestations#coupe-ondine",
         src: "/images/cards/coupe.webp",
         alt: "Image d'une coupe de cheveux",
         service: "Coupe",
